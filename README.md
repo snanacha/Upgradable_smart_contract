@@ -1,4 +1,4 @@
-UPGRADABLE ERC20 SMART CPNTRACT USING OPENZEPPELIN LIBRARY
+UPGRADABLE ERC20 SMART CONTRACT USING OPENZEPPELIN LIBRARY
 ----------------------------------------------------------
 
 ** Smart contracts are immutable, by design. But software quality heavily depends on the ability to upgrade and patch source code to produce iterative releases. Even though blockchain-based software profits significantly from the technology’s immutability, still a certain degree of mutability is needed for bug fixing and potential product improvements.
@@ -53,10 +53,13 @@ DSTEP 2: UPGRADING
 Due to technical limitations, when you upgrade a contract to a new version we cannot change the storage layout of that contract.This means that, if we have already declared a state variable in your contract,we cannot remove it, change its type, or declare another variable before it.Although, we can change the contract’s functions and events.
 The ERC20 contract is initialized with the token’s name, symbol and decimals in its constructor.
 
+
 DSTEP 3: TESTING
 ----------------
 To test upgradeable contracts we should create unit tests for the implementation contract, along with creating higher level tests for testing interaction via the proxy. We can use deployProxy in our tests just like we do when we deploy.
 
-https://drive.google.com/file/d/1Tfb_WnO6ZFx4tXFtr7wyBr8FeQQFuNH8/view?usp=sharing
-
+## SAMPLE RINKEBY TRANSACTION [ETHERSCAN]
+![pl](https://user-images.githubusercontent.com/30749584/97263096-41779500-1848-11eb-9db7-26fe5e91d633.JPG)
+## DEPLOYED CONTRACT & INTERACTIONS
+![ll](https://user-images.githubusercontent.com/30749584/97263498-1f324700-1849-11eb-9272-36afb14d1677.JPG)
 
